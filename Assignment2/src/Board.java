@@ -4,7 +4,8 @@ public class Board {
 	private int cols;
 	
 	public Board(int r, int c){
-		
+		rows = r;
+		cols = c;
 	}
 
 	public int getRows() {

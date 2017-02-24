@@ -24,15 +24,18 @@ public class XO {
 		return turn;
 	}
 
-	public static void setTurn(int turn) {
-		XO.turn = turn;
+	public static void setTurn() {
+		turn++;
 	}
 	
 	public boolean equals(XO x){
-		return true;
+		if(x.name.equals(this.name))
+			return true;
+		else
+			return false;
 	}
 	
 	public String toString(){
-		return "";
+		return name;
 	}
 }

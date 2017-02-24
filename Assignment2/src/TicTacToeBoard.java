@@ -7,6 +7,7 @@ public class TicTacToeBoard extends Board {
 	
 	public TicTacToeBoard(int r, int c) {
 		super(r, c);
+		turnCnt = 0;
 	}
 
 
@@ -25,8 +26,8 @@ public class TicTacToeBoard extends Board {
 	}
 
 
-	public void setTurnCnt(int turnCnt) {
-		this.turnCnt = turnCnt;
+	public void setTurnCnt() {
+		turnCnt = XO.getTurn();
 	}
 	
 	public boolean add(int x, int y){
