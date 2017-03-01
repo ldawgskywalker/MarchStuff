@@ -15,7 +15,7 @@ public class LotteryDemo {
 				
 		System.out.println(lottoMax);
 		
-		System.out.println("Contains: "+lottoMax.Contains());
+		System.out.println(lottoMax.Prize());
 		
 		kb.close();
 	}

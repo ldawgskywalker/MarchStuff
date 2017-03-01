@@ -37,8 +37,34 @@ public class Lottery {
 			if(lotteryNumbers[i]==userNumbers[i]){
 				count++;
 			}
+
 		}
 		return count;
+	}
+	public String Prize(){
+		
+		String s;
+		if(Contains()>0){
+			s = "Congratulations! You have "+Contains()+" matches. You win ";
+			if(count==1){
+				s += "$2!";
+			}
+			if(count==2){
+				s+="$10!";
+			}
+			if(count==3){
+				s+="$100!";
+			}
+			if(count==4){
+				s+="$500 000";
+			}
+			if(count==5){
+				s+="the GRANDPRIZE! $1million!!";
+			}
+		}
+		else
+			s = "Sorry, you have no matches.";
+		return s;
 	}
 	
 	public String toString(){
