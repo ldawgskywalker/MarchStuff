@@ -20,6 +20,8 @@ public class Exercise1 {
 		//reset word
 		word = "";
 		
+		System.out.print("Input words for second ArrayList. End with -1 when done: ");
+
 		//make list2
 		while(!word.equals("-1")){
 			word = kb.next();
