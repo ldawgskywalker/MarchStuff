@@ -37,7 +37,7 @@ public class Exercise1 {
 		list1.retainAll(list2);
 		
 		//print revised list
-		System.out.println(list1);
+		System.out.println("ArrayList with only the common Strings: \n"+list1);
 		
 		
 		

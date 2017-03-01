@@ -1,0 +1,61 @@
+EXERCISE1
+OUTPUTS:
+i.
+Input words for first ArrayList. End with -1 when done: Jon Snow
+Ned Stark
+Robb Stark
+-1
+Input words for second ArrayList. End with -1 when done: Jon Snow
+Samwell Tarly
+Ygritte
+-1
+[Jon, Snow, Ned, Stark, Robb, Stark]
+[Jon, Snow, Samwell, Tarly, Ygritte]
+ArrayList with only the common Strings: 
+[Jon, Snow]
+
+ii.
+Input words for first ArrayList. End with -1 when done: Rick
+Morty
+Mr.Poopybutthole
+Gerry
+Summer
+-1
+Input words for second ArrayList. End with -1 when done: Mr.Meeseeks
+Morty
+Rick
+Mr.Poopybutthole
+-1
+[Rick, Morty, Mr.Poopybutthole, Gerry, Summer]
+[Mr.Meeseeks, Morty, Rick, Mr.Poopybutthole]
+ArrayList with only the common Strings: 
+[Rick, Morty, Mr.Poopybutthole]
+
+iii.
+Input words for first ArrayList. End with -1 when done: Arnold
+Ford
+Bernard
+William
+-1
+Input words for second ArrayList. End with -1 when done: Arya
+Robb
+Goffrey
+Littlefinger
+-1
+[Arnold, Ford, Bernard, William]
+[Arya, Robb, Goffrey, Littlefinger]
+ArrayList with only the common Strings: 
+[]
+
+EXERCISE2
+
+OUTPUTS:
+i.
+Input words for ArrayList. End with -1 when done: Frodo
+Gandalf
+Gandalf
+Sam
+-1
+[Frodo, Gandalf, Sam]
+
+ii.
