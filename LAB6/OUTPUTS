@@ -59,3 +59,26 @@ Sam
 [Frodo, Gandalf, Sam]
 
 ii.
+Input words for ArrayList. End with -1 when done: Luke
+Luke
+Luke
+Luke
+Luke
+Luke
+-1
+[Luke]
+
+iii.
+Input words for ArrayList. End with -1 when done: H3H3
+iDubbbz
+FilthyFrank
+H3H3
+JacksFilms
+JacksFilms
+JonTron
+JonTron
+JonTron
+iDubbbz
+JonTron
+-1
+[H3H3, iDubbbz, FilthyFrank, JacksFilms, JonTron]
