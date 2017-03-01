@@ -4,8 +4,8 @@ public class XO {
 	private static int turn;
 	
 	public XO(){
-		turn = 1;
-		name = "X";
+		turn = 0;
+		name = "";
 	}
 
 	public String getName() {
@@ -13,6 +13,7 @@ public class XO {
 	}
 
 	public void setName() {
+		turn++;
 		if(turn%2==0){
 			name = "O";
 		}
@@ -20,11 +21,11 @@ public class XO {
 			name = "X";
 	}
 
-	public static int getTurn() {
+	public int getTurn() {
 		return turn;
 	}
 
-	public static void setTurn() {
+	public void setTurn() {
 		turn++;
 	}
 	

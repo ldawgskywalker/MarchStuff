@@ -8,6 +8,7 @@ public class TicTacToeBoard extends Board {
 	public TicTacToeBoard(int r, int c) {
 		super(r, c);
 		turnCnt = 0;
+		board = new XO[r][c];
 	}
 
 
@@ -27,19 +28,70 @@ public class TicTacToeBoard extends Board {
 
 
 	public void setTurnCnt() {
-		turnCnt = XO.getTurn();
+		turnCnt++;
 	}
 	
 	public boolean add(int x, int y){
-		return true;
+		if(board[x][y].equals(""))
+			return true;
+		else
+			return false;
 	}
+	
+	public void add(int x, int y, XO n){
+		board[x][y] = n;
+	}
+
 	
 	public boolean winner(){
-		return true;
+		//TOP
+		if(board[0][0].equals(board[0][1])&& board[0][0].equals(board[0][2])){
+			return true;
+		}
+		//HORIZONTAL MIDDLE
+		if(board[1][0].equals(board[1][1])&& board[1][0].equals(board[1][2])){
+			return true;
+		}
+		//DIAG FROM TOP LEFT
+		if(board[0][0].equals(board[1][1])&&board[0][0].equals(board[2][2])){
+			return true;
+		}
+		//VERTICAL MIDDLE
+		if(board[0][1].equals(board[1][1])&&board[0][1].equals(board[2][1])){
+			return true;
+		}
+		//DIAG FROM TOP RIGHT
+		if(board[0][2].equals(board[1][1])&&board[0][2].equals(board[2][0])){
+			return true;
+		}
+		//BOTTOM
+		if(board[2][0].equals(board[2][1])&&board[2][0].equals(board[2][2])){
+			return true;
+		}
+		//LEFT
+		if(board[0][0].equals(board[1][0])&&board[0][0].equals(board[2][0])){
+			return true;
+		}
+		//RIGHT
+		if(board[0][2].equals(board[1][2])&&board[0][2].equals(board[2][2])){
+			return true;
+		}
+		
+		return false;
 	}
-	
+	public void setUp(XO b){
+		for(int i=0;i<3;i++){
+			for(int j=0;j<3;j++){
+				board[i][j] = b;
+			}
+		}
+	}
 	public String toString(){
-		return "";
+		return "\t\tCol"
+				+"\n\t\t1\t2\t3"
+				+"\nRow\t1\t"+board[0][0]+"\t"+board[0][1]+"\t"+board[0][2]
+				+"\n\t2\t"+board[1][0]+"\t"+board[1][1]+"\t"+board[2][2]
+				+"\n\t3\t"+board[2][0]+"\t"+board[2][1]+"\t"+board[2][2];
 	}
 	
 	
