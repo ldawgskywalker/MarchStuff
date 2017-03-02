@@ -15,8 +15,7 @@ public class CheckerBoard {
 			System.out.println();
 		}
 		
-		for(int i=0;i<8;i++){
-			
-		}
+		
+		
 	}
 }
