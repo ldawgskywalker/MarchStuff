@@ -9,6 +9,17 @@ public class TicTacToeBoard extends Board {
 		super(r, c);
 		turnCnt = 0;
 		board = new XO[r][c];
+		
+		//
+		XO x = new XO();
+		x.setName("");
+		
+		for(int i=0;i<3;i++){
+			for(int j=0;j<3;j++){
+				board[i][j] = x;
+			}
+		}
+		
 	}
 
 
@@ -45,47 +56,41 @@ public class TicTacToeBoard extends Board {
 	
 	public boolean winner(){
 		//TOP
-		if(board[0][0].equals(board[0][1])&& board[0][0].equals(board[0][2])){
+		if(board[0][0].equals(board[0][1])&& board[0][0].equals(board[0][2]) && !board[0][0].getName().equals("")){
 			return true;
 		}
 		//HORIZONTAL MIDDLE
-		if(board[1][0].equals(board[1][1])&& board[1][0].equals(board[1][2])){
+		if(board[1][0].equals(board[1][1])&& board[1][0].equals(board[1][2])&& !board[1][0].getName().equals("")){
 			return true;
 		}
 		//DIAG FROM TOP LEFT
-		if(board[0][0].equals(board[1][1])&&board[0][0].equals(board[2][2])){
+		if(board[0][0].equals(board[1][1])&&board[0][0].equals(board[2][2])&& !board[0][0].getName().equals("")){
 			return true;
 		}
 		//VERTICAL MIDDLE
-		if(board[0][1].equals(board[1][1])&&board[0][1].equals(board[2][1])){
+		if(board[0][1].equals(board[1][1])&&board[0][1].equals(board[2][1])&& !board[0][1].getName().equals("")){
 			return true;
 		}
 		//DIAG FROM TOP RIGHT
-		if(board[0][2].equals(board[1][1])&&board[0][2].equals(board[2][0])){
+		if(board[0][2].equals(board[1][1])&&board[0][2].equals(board[2][0])&& !board[0][2].getName().equals("")){
 			return true;
 		}
 		//BOTTOM
-		if(board[2][0].equals(board[2][1])&&board[2][0].equals(board[2][2])){
+		if(board[2][0].equals(board[2][1])&&board[2][0].equals(board[2][2])&& !board[2][0].getName().equals("")){
 			return true;
 		}
 		//LEFT
-		if(board[0][0].equals(board[1][0])&&board[0][0].equals(board[2][0])){
+		if(board[0][0].equals(board[1][0])&&board[0][0].equals(board[2][0])&& !board[0][0].getName().equals("")){
 			return true;
 		}
 		//RIGHT
-		if(board[0][2].equals(board[1][2])&&board[0][2].equals(board[2][2])){
+		if(board[0][2].equals(board[1][2])&&board[0][2].equals(board[2][2])&& !board[0][2].getName().equals("")){
 			return true;
 		}
 		
 		return false;
 	}
-	public void setUp(XO b){
-		for(int i=0;i<3;i++){
-			for(int j=0;j<3;j++){
-				board[i][j] = b;
-			}
-		}
-	}
+	
 	public String toString(){
 		return "\t\tCol"
 				+"\n\t\t1\t2\t3"

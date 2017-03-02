@@ -11,8 +11,9 @@ public class Play {
 			name2 = kb.nextLine();
 		
 		TicTacToeBoard b = new TicTacToeBoard(3,3);
-		XO thing = new XO();
-		b.setUp(thing);
+		XO x = new XO();
+		XO o = new XO();
+		o.setName("O");
 		
 		
 		
@@ -20,26 +21,38 @@ public class Play {
 		System.out.println(name1+" - you are X's. Go first.");
 		
 		
-		System.out.println(b.toString());
+		System.out.println(b);
 		
-		System.out.print("Please input row# between 1-3 and a Column# btween 1-3: ");
+		System.out.print("Please input row# between 1-3 and a Column# between 1-3: ");
 			r = kb.nextInt();
 			c = kb.nextInt();
 			
-		if(b.add(r-1, c-1)){
-			b.add(r,c,thing);
-		}
+		
+			b.add(r-1,c-1,x);
+		
 
-		System.out.println(b.toString());
+		System.out.println(b);
 			
-		/*while(!b.winner()){
-			thing.setName();
-			if(thing.getTurn()%2==0){
-				System.out.println(name2+"");
+		while(!b.winner()){
+			if(XO.getTurn()%2==0){
+				System.out.println(name2+", it is your turn.");
+				System.out.print("Please input row# between 1-3 and a Column# between 1-3: ");
+				r = kb.nextInt();
+				c = kb.nextInt();
+				b.add(r-1,c-1,o);
+			}
+			else{
+				System.out.println(name1+", it is your turn.");
+				System.out.print("Please input row# between 1-3 and a Column# between 1-3: ");
+				r = kb.nextInt();
+				c = kb.nextInt();
+				b.add(r-1,c-1,x);
 			}
 			
-			thing.setTurn();
-		}*/
+			System.out.println(b);
+			XO.setTurn();
+			b.setTurnCnt();
+		}
 				
 		
 		
