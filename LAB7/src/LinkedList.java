@@ -1,4 +1,4 @@
-//class LinkedList (only the first few methods are given here)
+
 public class LinkedList {
 	private Node front;
 	private int count;
@@ -52,6 +52,28 @@ public class LinkedList {
 		while (curr != null) {
 			System.out.print(curr);
 			curr = curr.getNext();
+		}
+		System.out.println(".");
+	}
+	//prints odd numbered nodes
+	public void enumerateOddNodes(){
+		Node curr = front.getNext();
+		while (curr != null) {
+			System.out.print(curr);
+			curr = curr.getNext().getNext();
+		}
+		System.out.println(".");	
+	}
+	//prints the indices of nodes which contain String
+	public void listAllNodesWith(String d){
+		Node curr = front;
+		//Counter
+		int thing = 0;
+		while (curr != null) {
+			if(curr.getData().contains(d))
+				System.out.print(thing+" ");
+			curr = curr.getNext();
+			thing++;
 		}
 		System.out.println(".");
 	}
