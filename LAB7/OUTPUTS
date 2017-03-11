@@ -1,0 +1,84 @@
+OUTPUTS
+
+EXERCISE1
+
+i.
+Input words for ArrayList. End with -1 when done: Neil
+Neil
+Young
+Young
+Neil
+Diamond
+The
+Who
+Guess
+Who
+-1
+[Neil, Young, Diamond, The, Who, Guess]
+
+ii.
+Input words for ArrayList. End with -1 when done: Ned
+Stark
+Jon
+Snow
+Arya
+Stark
+Robb
+Stark
+Robb
+-1
+[Ned, Stark, Jon, Snow, Arya, Robb]
+
+iii.
+Input words for ArrayList. End with -1 when done: Word
+Word
+Other
+Word
+Another
+Word
+Something
+That
+thing
+thing
+-1
+[Word, Other, Another, Something, That, thing]
+
+EX2
+
+i.
+Input words for ArrayList. End with -1 when done: z
+a
+s
+d
+e
+r
+f
+g
+h
+e
+w
+-1
+[a, d, e, e, f, g, h, r, s, w, z]
+
+ii.
+Input words for ArrayList. End with -1 when done: Rick
+Morty
+Gerry
+Summer
+Mr.Poopybutthole
+Season3
+-1
+[Gerry, Morty, Mr.Poopybutthole, Rick, Season3, Summer]
+
+iii.
+Input words for ArrayList. End with -1 when done: Harvest
+Zuma
+Rust
+Freedom
+-1
+[Freedom, Harvest, Rust, Zuma]
+
+
+LINKDEMO
+
+i.
