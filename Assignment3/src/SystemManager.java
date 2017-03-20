@@ -41,16 +41,17 @@ public class SystemManager {
 	// CREATE AIRPORT, ADD TO ARRAYLIST
 	public void createAirport(String c) {
 		// CHECKS IF CORRECT LENGTH OR IF CONTAINS NUMBER
+		int count = 0;
 		if (c.length() == 3) {
 			Airport airp = new Airport(c);
-			ap.add(airp);
 			// IF NOT IN LIST, ADD
 			for (int i = 0; i < ap.size(); i++) {
-				if (!(ap.get(i).getCode().equals(c))) {
-					Airport airp1 = new Airport(c);
-					ap.add(airp1);
+				if ((ap.get(i).getCode().equals(c))) {
+					count++;
 				}
 			}
+			if(count==0)
+				ap.add(airp);
 		}
 
 	}
@@ -58,12 +59,15 @@ public class SystemManager {
 	// ADDS AIRLINE TO LIST
 	public void createAirline(String n) {
 		Airline airl = new Airline(n);
+		int count = 0;
 		// IF NOT IN LIST, ADDS IT TO LIST
 		for (int i = 0; i < al.size(); i++) {
-			if (!(al.get(i).equals(airl))) {
-				al.add(airl);
+			if ((al.get(i).equals(airl))) {
+				count++;
 			}
 		}
+		if(count==0)
+			al.add(airl);
 
 	}
 
@@ -144,9 +148,10 @@ public class SystemManager {
 					c = 3;
 				if (col == 'E')
 					c = 4;
-
+				
 				if (s[row][c].isBooked() == false) {
 					s[row][c].setBooked(true);
+					System.out.println("SUCCESSFULLY BOOKED! Airline: "+air+"\nID: "+id+"\nSeat: "+row+col);
 				} else
 					System.out.println("Seat taken.");
 			}
@@ -155,7 +160,22 @@ public class SystemManager {
 	}
 	
 	public void displaySystemDetails(){
-		System.out.println("");
+		System.out.print("Available Airlines: [");
+		for(int i=0;i<al.size();i++){
+			System.out.print(al.get(i).getName()+" ");
+		}
+		System.out.print("]\nAirports: [");
+		for(int i=0;i<ap.size();i++){
+			System.out.print(ap.get(i).getCode()+" ");
+		}
+		System.out.println("]\nFlights: ");
+		for(int i=0;i<fl.size();i++){
+			System.out.println("From: "+fl.get(i).getOrig().getCode());
+			System.out.print("\tTo: "+fl.get(i).getDest().getCode());
+			System.out.println("\nAirline: "+fl.get(i).getAirl().getName());
+			System.out.println("\tID: "+fl.get(i).getId());
+			System.out.println();
+		}
 	}
 	
 }
