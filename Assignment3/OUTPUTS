@@ -1,0 +1,151 @@
+ASSIGNMENT 3 OUTPUTS
+
+i.
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+1
+AIRLINES: [ROO JBU JAA WSJET ]
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+2
+Airports: [ANR DUB MAN YHZ BOS EWR ]
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+3
+FLIGHTS: From: DUB
+	To: EWR
+Airline: ROO
+	ID: 777
+
+From: MAN
+	To: BOS
+Airline: JAA
+	ID: 147
+
+From: YHZ
+	To: ANR
+Airline: JAA
+	ID: 663
+
+From: YHZ
+	To: BOS
+Airline: WSJET
+	ID: 123
+
+
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+4
+To book a seat, input the name of the Airline you wish to travel with, the Flight ID, the row number, and letter of seat: WSJET 123 1 A
+SUCCESSFULLY BOOKED! Airline: WSJET
+ID: 123
+Seat: 1A
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+4
+To book a seat, input the name of the Airline you wish to travel with, the Flight ID, the row number, and letter of seat: WSJET 123 1 B
+SUCCESSFULLY BOOKED! Airline: WSJET
+ID: 123
+Seat: 1B
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+-1
+Available Airlines: [ROO JBU JAA WSJET ]
+Airports: [ANR DUB MAN YHZ BOS EWR ]
+Flights: 
+From: DUB
+	To: EWR
+Airline: ROO
+	ID: 777
+
+From: MAN
+	To: BOS
+Airline: JAA
+	ID: 147
+
+From: YHZ
+	To: ANR
+Airline: JAA
+	ID: 663
+
+From: YHZ
+	To: BOS
+Airline: WSJET
+	ID: 123
+
+
+
+ii.
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+4
+To book a seat, input the name of the Airline you wish to travel with, the Flight ID, the row number, and letter of seat: ROO 777 5 C
+SUCCESSFULLY BOOKED! Airline: ROO
+ID: 777
+Seat: 5C
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+4
+To book a seat, input the name of the Airline you wish to travel with, the Flight ID, the row number, and letter of seat: ROO 777 5 C
+Seat taken.
+Input number for what you would like to do:
+1.Check Airlines
+2.Check Airports
+3.Check Flights
+4.Book Flights
+-1. Exit
+-1
+Available Airlines: [ROO JBU JAA WSJET ]
+Airports: [ANR DUB MAN YHZ BOS EWR ]
+Flights: 
+From: DUB
+	To: EWR
+Airline: ROO
+	ID: 777
+
+From: MAN
+	To: BOS
+Airline: JAA
+	ID: 147
+
+From: YHZ
+	To: ANR
+Airline: JAA
+	ID: 663
+
+From: YHZ
+	To: BOS
+Airline: WSJET
+	ID: 123
