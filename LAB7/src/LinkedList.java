@@ -57,10 +57,13 @@ public class LinkedList {
 	}
 	//prints odd numbered nodes
 	public void enumerateOddNodes(){
-		Node curr = front.getNext();
+		Node curr = front;
+		int count = 0;
 		while (curr != null) {
-			System.out.print(curr);
-			curr = curr.getNext().getNext();
+			if(count%2!=0)
+				System.out.print(curr);
+			curr = curr.getNext();
+			count++;
 		}
 		System.out.println(".");	
 	}

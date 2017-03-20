@@ -82,3 +82,40 @@ Freedom
 LINKDEMO
 
 i.
+Please input items for list. Input "-1" when finished
+Luke
+Bob
+Jim
+-1
+Number of nodes in the list: 3
+Jim-->Bob-->Luke-->.
+Bob-->.
+Input letter: L
+2 .
+
+ii.
+Please input items for list. Input "-1" when finished
+NEIL
+YOUNG
+CRAZY
+HORSE
+-1
+Number of nodes in the list: 4
+HORSE-->CRAZY-->YOUNG-->NEIL-->.
+CRAZY-->NEIL-->.
+Input letter: Y
+1 2 .
+
+iii.
+Please input items for list. Input "-1" when finished
+this
+that
+other
+thing
+-1
+Number of nodes in the list: 4
+thing-->other-->that-->this-->.
+other-->this-->.
+Input letter: t
+0 1 2 3 .
+

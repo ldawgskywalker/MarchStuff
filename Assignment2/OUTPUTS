@@ -1,0 +1,146 @@
+TICTACTOE OUTPUTS
+
+i.
+Player 1 name: Chad Kroeger
+Player 2 name: Mike Kroeger
+Chad Kroeger - you are X's. Go first.
+		Col
+		1	2	3
+Row	1			
+	2			
+	3			
+Please input row# between 1-3 and a Column# between 1-3: 1 1
+		Col
+		1	2	3
+Row	1	X		
+	2			
+	3			
+Mike Kroeger, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 2 2
+		Col
+		1	2	3
+Row	1	X		
+	2		O	
+	3			
+Chad Kroeger, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 1 3
+		Col
+		1	2	3
+Row	1	X		X
+	2		O	
+	3			
+Mike Kroeger, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 3 3
+		Col
+		1	2	3
+Row	1	X		X
+	2		O	O
+	3			O
+Chad Kroeger, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 1 2
+		Col
+		1	2	3
+Row	1	X	X	X
+	2		O	O
+	3			O
+Congratulations, Chad Kroeger! You have won!
+
+
+ii.
+Player 1 name: Luke Skywalker
+Player 2 name: Yoda
+Luke Skywalker - you are X's. Go first.
+		Col
+		1	2	3
+Row	1			
+	2			
+	3			
+Please input row# between 1-3 and a Column# between 1-3: 3 1
+		Col
+		1	2	3
+Row	1			
+	2			
+	3	X		
+Yoda, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 2 2
+		Col
+		1	2	3
+Row	1			
+	2		O	
+	3	X		
+Luke Skywalker, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 1 1
+		Col
+		1	2	3
+Row	1	X		
+	2		O	
+	3	X		
+Yoda, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 2 1
+		Col
+		1	2	3
+Row	1	X		
+	2	O	O	
+	3	X		
+Luke Skywalker, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 1 2
+		Col
+		1	2	3
+Row	1	X	X	
+	2	O	O	
+	3	X		
+Yoda, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 2 3
+		Col
+		1	2	3
+Row	1	X	X	
+	2	O	O	O
+	3	X		
+Congratulations, Yoda! You have won!
+
+iii.
+Player 1 name: Steve Harwell
+Player 2 name: Guy Fieri
+Steve Harwell - you are X's. Go first.
+		Col
+		1	2	3
+Row	1			
+	2			
+	3			
+Please input row# between 1-3 and a Column# between 1-3: 2 2
+		Col
+		1	2	3
+Row	1			
+	2		X	
+	3			
+Guy Fieri, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 1 1
+		Col
+		1	2	3
+Row	1	O		
+	2		X	
+	3			
+Steve Harwell, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 1 1
+INVALID ENTRY. PLEASE RE-ENTER: 2 2
+INVALID ENTRY. PLEASE RE-ENTER: 3 3
+		Col
+		1	2	3
+Row	1	O		
+	2		X	X
+	3			X
+Guy Fieri, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 1 2
+		Col
+		1	2	3
+Row	1	O	O	
+	2		X	X
+	3			X
+Steve Harwell, it is your turn.
+Please input row# between 1-3 and a Column# between 1-3: 1 3
+		Col
+		1	2	3
+Row	1	O	O	X
+	2		X	X
+	3			X
+Congratulations, Steve Harwell! You have won!

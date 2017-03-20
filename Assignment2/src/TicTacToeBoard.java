@@ -4,13 +4,14 @@ public class TicTacToeBoard extends Board {
 	private XO board[][];
 	private int turnCnt;
 	
-	
+	//CONSTRUCTOR
 	public TicTacToeBoard(int r, int c) {
+		//CALLS SUPERCLASS CONSTRUCTOR
 		super(r, c);
 		turnCnt = 0;
 		board = new XO[r][c];
 		
-		//
+		//SETS ENTIRE 2D ARRAY TO "BLANK" xo OBJECT
 		XO x = new XO();
 		x.setName("");
 		
@@ -22,7 +23,7 @@ public class TicTacToeBoard extends Board {
 		
 	}
 
-
+	//GET AND SETS
 	public XO[][] getBoard() {
 		return board;
 	}
@@ -42,18 +43,20 @@ public class TicTacToeBoard extends Board {
 		turnCnt++;
 	}
 	
+	//CHECKS IF SPACE IS OPEN
 	public boolean add(int x, int y){
-		if(board[x][y].equals(""))
+		if(board[x][y].getName().equals(""))
 			return true;
 		else
 			return false;
 	}
 	
+	//SETS SPECIFIC SPOT TO AN xo OBJECT
 	public void add(int x, int y, XO n){
 		board[x][y] = n;
 	}
 
-	
+	//CHECKS IF THERE IS WINNER
 	public boolean winner(){
 		//TOP
 		if(board[0][0].equals(board[0][1])&& board[0][0].equals(board[0][2]) && !board[0][0].getName().equals("")){
@@ -90,7 +93,7 @@ public class TicTacToeBoard extends Board {
 		
 		return false;
 	}
-	
+	//PRINTS 2D ARRAY
 	public String toString(){
 		return "\t\tCol"
 				+"\n\t\t1\t2\t3"

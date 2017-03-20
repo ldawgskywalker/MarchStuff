@@ -14,6 +14,7 @@ public class Client {
 		res.createAirport("BOS");
 		res.createAirport("JFK");
 		
+		System.out.println(res.getAp().get(3).getCode());
 		
 		
 		//create airlines
@@ -21,6 +22,11 @@ public class Client {
 		res.createAirline("DELTA");
 		res.createAirline("USAIR");
 		res.createAirline("WSJET");
+		
+		System.out.println(res.getAl().get(1).getName());
+		System.out.println(res.getAl().get(2).getName());
+		System.out.println(res.getAl().get(3).getName());
+		System.out.println(res.getAl().get(4).getName());
 		
 		//create flights
 		res.createFlight("AC", "YHZ", "YUL", "123");
@@ -31,6 +37,8 @@ public class Client {
 		res.createFlight("AC", "YHZ", "YYZ", "689");
 		res.createFlight("DELTA", "YHZ", "BOS", "123");
 		//etc.
+		
+		System.out.println(res.getFl().get(3).getId());
 		
 		//create seats
 		res.createSeats("AC", "123", 40);

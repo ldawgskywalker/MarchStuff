@@ -57,10 +57,10 @@ public class SystemManager {
 
 	// ADDS AIRLINE TO LIST
 	public void createAirline(String n) {
+		Airline airl = new Airline(n);
 		// IF NOT IN LIST, ADDS IT TO LIST
 		for (int i = 0; i < al.size(); i++) {
-			if (!(al.get(i).getName().equals(n))) {
-				Airline airl = new Airline(n);
+			if (!(al.get(i).equals(airl))) {
 				al.add(airl);
 			}
 		}
