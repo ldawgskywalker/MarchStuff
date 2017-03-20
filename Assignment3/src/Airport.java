@@ -3,8 +3,6 @@ public class Airport {
 	private String code;
 	//CONSTRUCTOR
 	public Airport(String c){
-		//checks if correct length
-		if(c.length()==3)
 			code = c;
 	}
 	//GETTERS AND SETTERS

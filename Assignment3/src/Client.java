@@ -14,6 +14,8 @@ public class Client {
 		res.createAirport("BOS");
 		res.createAirport("JFK");
 		
+		
+		
 		//create airlines
 		res.createAirline("AC");
 		res.createAirline("DELTA");
@@ -46,6 +48,6 @@ public class Client {
 		//display system details
 		res.displaySystemDetails();
 		}
-		}
+		
 	}
-}
+
