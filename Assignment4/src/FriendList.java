@@ -26,8 +26,7 @@ public class FriendList {
 	}
 	//RETURNS OLDEST FRIEND
 	public User oldestFriend(){
-		//TODO: FIX THIS METHOD
-		return ;
+		//TODO: THIS METHOD
 	}
 	//FINDS COMMON FRIENDS
 	public LinkedList<User> commonFriends(User x, User y){

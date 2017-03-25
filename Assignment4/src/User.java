@@ -55,9 +55,24 @@ public class User {
 		//TODO: This Method
 		return false;
 	}
-	
+	//ADD USER TO LINKEDLIST
 	public void addFriend(User u){
 		friends.addLast(u);
 		
+	}
+	//REMOVE USER FROM LINKEDLIST
+	public void removeFriend(User u){
+		friends.remove(u);
+	}
+	//RETURNS OLDEST USER -- BY AGE -- IN THE LIST
+	public User oldestFriend(){
+		User u = friends.getFirst();
+		for(int i=0;i<friends.size();i++){
+			if(u.getBirthYear()<friends.get(i).getBirthYear()){
+				u=friends.get(i);
+			}
+				
+		}
+		return u;
 	}
 }
