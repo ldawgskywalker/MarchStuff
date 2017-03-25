@@ -26,7 +26,15 @@ public class FriendList {
 	}
 	//RETURNS OLDEST FRIEND
 	public User oldestFriend(){
-		//TODO: THIS METHOD
+		User u=list.getFirst();
+		
+		for(int i=0;i<list.size();i++){
+			if(u.getBirthYear()<list.get(i).getBirthYear()){
+				u=list.get(i);
+			}
+		}
+		
+		return u;
 	}
 	//FINDS COMMON FRIENDS
 	public LinkedList<User> commonFriends(User x, User y){
