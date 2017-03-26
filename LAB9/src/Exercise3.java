@@ -17,19 +17,24 @@ public class Exercise3 {
 		Scanner input = new Scanner(new File("numbers"));
 		
 		//WRITES TXT DOCUMENT INTO ARRAY
-		int[] n = new int[100];
-		for(int i=0;i<100;i++){
-			n[i]=input.nextInt();
+		LinkedList o = new LinkedList();
+		while(input.hasNext()){
+		//I don't understand why this part will
+		//not work. the "input.nextInt()" seems 
+		//to not take anything in as a value
+			long test=input.nextLong();
+			o.add(test);
 		}
 		//SORTS ARRAY
-		Arrays.sort(n);
+		Collections.sort(o);
+		
 		
 		//TO CREATE NEW TXT FILE, ORDERED VER. OF "NUMBERS.TXT"
 		PrintWriter out = new PrintWriter(new FileWriter("ordered"));
 		
 		//WRITES SORTED ARRAY INTO NEW TXT DOC
-		for(int i=0;i<n.length;i++){
-			out.println(n[i]);
+		for(int i=0;i<o.size();i++){
+			out.println(o.get(i));
 		}
 		
 		System.out.println("Successfully printed sorted numbers to \"ordered.txt\"");

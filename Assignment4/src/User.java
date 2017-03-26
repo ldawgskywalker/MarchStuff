@@ -1,16 +1,16 @@
-import java.util.*;
+
 public class User {
 	private String name;
 	private String location;
 	private int birthYear;
-	private LinkedList<User> friends;
+	private LinkedList friends;
 	
 	//CONSTRUCTOR
 	public User(String n, String l, int by){
 		name = n;
 		location = l;
 		birthYear = by;
-		friends = new LinkedList<User>();
+		friends = new LinkedList();
 	}
 	//SETTERS AND GETTERS
 	public String getName() {
@@ -37,11 +37,11 @@ public class User {
 		this.birthYear = birthYear;
 	}
 
-	public LinkedList<User> getFriends() {
+	public LinkedList getFriends() {
 		return friends;
 	}
 
-	public void setFriends(LinkedList<User> friends) {
+	public void setFriends(LinkedList friends) {
 		this.friends = friends;
 	}
 	
@@ -52,21 +52,28 @@ public class User {
 	
 	//FINDS IF USER IS SAME
 	public boolean isEqual(User u){
-		//TODO: This Method
+		if(u.equals(u)){
+			return true;
+		}
 		return false;
 	}
 	//ADD USER TO LINKEDLIST
 	public void addFriend(User u){
-		friends.addLast(u);
+		friends.addToEnd(u);
+		
 		
 	}
 	//REMOVE USER FROM LINKEDLIST
 	public void removeFriend(User u){
-		friends.remove(u);
+		for(int i=0;i<friends.size();i++){
+			if(friends.get(i).getName().equals(u.getName()))
+				friends.remove(i);
+		}
+		
 	}
 	//RETURNS OLDEST USER -- BY AGE -- IN THE LIST
 	public User oldestFriend(){
-		User u = friends.getFirst();
+		User u = friends.get(0);
 		for(int i=0;i<friends.size();i++){
 			if(u.getBirthYear()<friends.get(i).getBirthYear()){
 				u=friends.get(i);
