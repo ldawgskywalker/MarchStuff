@@ -10,10 +10,15 @@ public class FriendList {
 	}
 	//ADDS USER TO LIST
 	public void addUser(User u){
-		counter++;
+		//CHECKS IF 13 OR OLDER
+		if((2017-(u.getBirthYear())>12)){
+			list.add(u);
+			counter++;
+		}
 	}
 	//REMOVES USER FROM LIST
 	public void removeUser(User u){
+		
 		counter--;
 	}
 	//RETURNS NUMBER OF USERS ON FRIENDLIST
